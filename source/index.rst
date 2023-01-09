@@ -24,5 +24,11 @@ Table of Contents
 -----------------
 
 .. toctree::
+  :caption: Basics
 
-  gettingstarted
+  getting-started
+
+.. toctree::
+  :caption: Strategies
+
+  strategies/call-block-logs
