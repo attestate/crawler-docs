@@ -1,5 +1,6 @@
 # Minimal makefile for Sphinx documentation
 #
+# Deploying rsync -avz build/html/ root@65.109.190.148:/var/www/html/crawler
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

@@ -20,6 +20,42 @@ Developers can integrate with Attestate's crawler in two ways for now:
 #. From the command line of a UNIX-compatible system
 #. From within JavaScript as an NPM dependency.
 
+Why use `@attestate/crawler`?
+-----------------------------
+
+Copying a smart contract's state locally is difficult and requires a lot of
+engineering.
+
+Ethereum full node cloud providers like Alchemy are rate-limiting requests
+which can lead to failures. Synchronizing a process's state with Ethereum's continuous block production is
+challenging.
+
+Turn-key solutions like The Graph Protocol exist but their goal is to replicate
+contract storage and so external data sources cannot be integrated.
+Additionally, it is often not enough to query contract state.
+
+For example, to build a music NFT player, a developer isn't interested in
+knowing all NFTs. Rather, they want to have a list of all unique songs (a
+derivative of all NFTs) registered on Ethereum.
+
+This is where Attestate's crawler comes in: It enables developers to build
+derivative views from many data sources. It reduces the complexity of dealing
+with data sources, makes extracting data super fast and implements resumability
+into the crawling process.
+
+Features
+--------
+
+* Complexity of dealing with data sources is simplified (rate-limiting support, retrying after error, reliably persisting crawl results)
+* Fastest way to slice out on-chain data: 1 TB/h with a co-located Erigon node.
+* Resumable crawls with isolated stages for transformation to minimize costly network requests.
+* No token launch, no miners, no fees: Just a collaboratively developed GPL-3 free software project.
+* Indexing off-chain data sources other than Ethereum is possible: IPFS, Arweave, HTTPS, GraphQL).
+* Database-agnostic: Can be integrated with any type of database.
+
+.. warning::
+  We're currently actively working on these documents. They're still far from acurate or trustworthy.
+
 Table of Contents
 -----------------
 
@@ -27,6 +63,7 @@ Table of Contents
   :caption: Basics
 
   getting-started
+  configuration
 
 .. toctree::
   :caption: Strategies

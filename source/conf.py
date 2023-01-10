@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = '@attestate/crawler'
-copyright = '2023, Tim Daubenschütz'
+copyright = '2023, The Attestate Crawler Contributors'
 author = 'Tim Daubenschütz'
 
 # -- General configuration ---------------------------------------------------
