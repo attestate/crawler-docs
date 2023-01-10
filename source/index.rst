@@ -46,12 +46,18 @@ into the crawling process.
 Features
 --------
 
-* Complexity of dealing with data sources is simplified (rate-limiting support, retrying after error, reliably persisting crawl results)
-* Fastest way to slice out on-chain data: 1 TB/h with a co-located Erigon node.
-* Resumable crawls with isolated stages for transformation to minimize costly network requests.
-* No token launch, no miners, no fees: Just a collaboratively developed GPL-3 free software project.
-* Indexing off-chain data sources other than Ethereum is possible: IPFS, Arweave, HTTPS, GraphQL).
-* Database-agnostic: Can be integrated with any type of database.
+* Resumable crawls using Extract, Transform and Load separation
+* Rate-limiting support for Infura & Alchemy
+* Efficient: Minimized network calls through separation of concerns
+* Fast: Up to 1TB/h on a server that hosts Erigon
+* No token launch, no miners, no fees: Just a community FOSS GPL3 project
+* Database-agnostic: LevelDB, sqlite, PostgreSQL, etc.
+* Battle-tested: Used in production
+* Extensively tested: hundreds of unit tests
+* Ethereum JSON-RPC support
+* GraphQL support
+* IPFS support
+* Arweave support
 
 .. warning::
   We're currently actively working on these documents. They're still far from acurate or trustworthy.
