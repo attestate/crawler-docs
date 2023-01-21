@@ -27,8 +27,8 @@ Copying a smart contract's state locally is difficult and requires a lot of
 engineering.
 
 Ethereum full node cloud providers like Alchemy are rate-limiting requests
-which can lead to failures. Synchronizing a process's state with Ethereum's continuous block production is
-challenging.
+which can lead to failures. Synchronizing a process's state with Ethereum's
+continuous block production is challenging.
 
 Turn-key solutions like The Graph Protocol exist but their goal is to replicate
 contract storage and so external data sources cannot be integrated.
@@ -40,8 +40,8 @@ derivative of all NFTs) registered on Ethereum.
 
 This is where Attestate's crawler comes in: It enables developers to build
 derivative views from many data sources. It reduces the complexity of dealing
-with data sources, makes extracting data super fast and implements resumability
-into the crawling process.
+with data sources, which makes extracting data super fast and implements
+resumability into the crawling process.
 
 Features
 --------

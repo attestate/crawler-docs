@@ -50,7 +50,7 @@ The strategy is used by loading it in the crawl path as follows:
   const topic2 = null;
   const address = null;
 
-  const crawlPath = {
+  const crawlPath = [{
     extractor: {
       module: blockLogs.extractor,
       args: [range.start, range.end]
@@ -67,11 +67,12 @@ The strategy is used by loading it in the crawl path as follows:
         address
       ]
     }
-  };
+  }];
 
-	(async () => {
-		await boot(crawlPath, config);
-	})();
+  (async () => {
+    await boot(crawlPath, config);
+
+  })();
 
 
 Function reference
